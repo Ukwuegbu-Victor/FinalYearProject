@@ -1,0 +1,15 @@
+def echo(outfilep, datafn, ib, ie, jb, je, id, jd, xl, yl, nx, ny):
+    with open(outfilep, 'w') as file:
+        file.write(f"Input data was read from: {datafn}\n")
+        file.write("==== Input Data ======\n\n")
+        file.write(f"X length = {xl} [m]\n")
+        file.write(f"Y length = {yl} [m]\n")
+        file.write("<<<< Array Parameters >>>>\n")
+        file.write(f"Number of x nodes = {nx}\n")
+        file.write(f"    I begin index = {ib}\n")
+        file.write(f"    I end   index = {ie}\n")
+        file.write(f"Number of y nodes = {ny}\n")
+        file.write(f"    J begin index = {jb}\n")
+        file.write(f"    J end   index = {je}\n")
+        file.write(f"I array dimension = {id+1}\n")
+        file.write(f"J array dimension = {jd+1}\n")
